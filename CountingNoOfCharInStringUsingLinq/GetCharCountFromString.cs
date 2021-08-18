@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CountingNoOfCharInStringUsingLinq
 {
-    class Program
+    class GetCharCountFromString
     {
         public static void GetCharCount(string text)
         {
