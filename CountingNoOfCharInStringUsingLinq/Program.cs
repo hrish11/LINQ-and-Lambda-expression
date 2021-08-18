@@ -5,10 +5,8 @@ namespace CountingNoOfCharInStringUsingLinq
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void GetCharCount(char[] chararray)
         {
-            string test = "ererecvveredf";
-            char[] chararray = (test).ToCharArray();
             var query1 = chararray.Distinct().OrderBy(s => s);
 
             foreach (char item in query1)
@@ -21,6 +19,14 @@ namespace CountingNoOfCharInStringUsingLinq
                 }
             }
             Console.ReadKey();
+        }
+
+        static void Main(string[] args)
+        {
+            string test = "ererecvveredf";
+            char[] chararray = (test).ToCharArray();
+            GetCharCount(chararray);
+
         }
     }
 }
